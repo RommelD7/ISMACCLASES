@@ -18,10 +18,10 @@ public class CategoriaController {
 	@Autowired
 	private CategoriaDAO categoriaDAO;
 	@GetMapping("/findAll")      // path secundario
-	public String finAll(Model  model) {
+	public String findAll(Model  model) {
 		//try {
 			List<Categoria> categorias = categoriaDAO.findAll();
-			model.addAttribute("keyCategorias",categorias);    //EJ : Clave = KeyClientes , valor = clientes
+			model.addAttribute("categorias",categorias);    //EJ : Clave = KeyClientes , valor = clientes
 
 			return "listar-categorias";  //nombre del formulario EJ.listar-clientes.html o listar-clientes.jsp
 //		} catch (Exception e) {
@@ -78,43 +78,3 @@ public class CategoriaController {
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

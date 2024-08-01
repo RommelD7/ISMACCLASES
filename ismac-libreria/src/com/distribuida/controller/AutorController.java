@@ -23,6 +23,50 @@ public class AutorController {
 	public String finAll(Model  model) {
 		//try {
 			List<Autor> autores = autorDAO.findAll();
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			model.addAttribute("keyAutores",autores);    //EJ : Clave = KeyClientes , valor = clientes
 
 			return "listar-autores";  //nombre del formulario EJ.listar-clientes.html o listar-clientes.jsp
